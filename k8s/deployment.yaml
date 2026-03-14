@@ -28,16 +28,4 @@ spec:
   - port: 80
     targetPort: 80
   type: ClusterIP
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: webcolor
-spec:
-  selector:
-    app: webcolor2
-  ports:
-  - port: 80
-    targetPort: 80
-  type: ClusterIP
 
